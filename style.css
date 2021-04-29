@@ -72,15 +72,16 @@ blockquote {
 	gap: 40px;
 	justify-content: center;
 	align-items: center;
+	max-width: 1100px;
 	margin: auto;
 }
 
 header {
-	grid-column: 1 / span 3;
-	grid-row: 1 / span 1;
 	display: grid;
 	grid-template-columns: 1fr 4fr 2fr;
 	gap: 40px;
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 1;
 }
 
 h1 {
@@ -108,7 +109,7 @@ p {
 	grid-column: 1 / span 1;
 	background-color: var(--svetla);
 	border-right: solid 2px var(--oranzova);
-	text-align: center;
+	text-align: right;
 	align-self: center;
 	padding: 20px;
 }
@@ -116,6 +117,7 @@ p {
 figure,
 blockquote {
 	grid-column: 1 / span 3;
+	margin: 0;
 }
 
 h2 {
@@ -123,6 +125,10 @@ h2 {
 	color: var(--zelena);
 	padding: 15px;
 	font-size: 36px;
+}
+
+img {
+	max-width: 100%;
 }
 
 .mlsani4 {
@@ -158,8 +164,6 @@ blockquote::after {
 
 .tip {
 	background-color: var(--svetla);
-	text-align: center;
-	align-self: center;
 	padding: 20px;
 }
 
@@ -167,6 +171,7 @@ blockquote::after {
 	grid-column: 3 / span 1;
 	background-color: var(--svetla);
 	border-left: solid 2px var(--oranzova);
+	text-align: left;
 }
 
 footer {
